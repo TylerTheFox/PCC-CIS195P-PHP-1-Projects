@@ -1,0 +1,68 @@
+A. Questions about 'Static.html'
+	1. This is a standard html page, there is no difference.
+	2. There is no PHP code in this file, this file will never change. 
+
+B. Questions about 'html_relationship.html'
+	1. Nothing is different between the two. 
+	2. Nothing is different between the two. Both files display the PHP code because this isn't a .php file
+	3. No difference it just added the code in plaintext again. 
+	
+C. Questions about 'html_relationship.php'
+	1. Opening directly from the browser printed the php in plaintext, it did not execute; however opening it from Apache caused the script to execute and it returned "Welcome, "
+	2. One printed a PHP script thats suppose to print out HTML and one printed out HTML.
+	3. The text now reads 'Welcome, Brandan'
+	
+D. Questions about 'your_name_is.php'
+	1. Running it directly shows the file in plaintext with no script execution, running it from Apache shows 'Your name is Paul Your name is Paul, and your age is 20 Goodbye, $name!\n'
+	2. Running it directly shows the same plain text; however running it from Apache shows 4 lines ' Your name is Paul' newline 'Your name is Paul, and your age is 20. newline 'Goodbye, $name\n'
+	3. Because one is in double quotes, you can use variables in double quotes without breaking them, however in single quotes you must exit the quotes. So print 'Goodbye, ' . $name . "!\n"; should fix it
+
+E. Questions about code_islands.php
+	1. Opening directly shows a executed php script. Opening from the browser shows a much different story. '$variable unset because it's undeclared$variable empty() because it's undeclared $variable unset because it's value is null$variable isset() because it exists with a non-null value'
+	2. One is 35 lines of text and the other is 4 lines of text.
+	3. C:\xampp\php\php.exe is not configured with my web browser to execute on php pages. So the browser just reads it out in plaintext because the script interpreter is not running.
+
+I'm not quite sure what you were asking but this is what I interpreted. 
+
+<?php
+//  $variable is undeclared in any earlier code island
+//
+
+if (isset($variable)) echo '$variable isset() because it\'s undeclared';
+else echo '$variable unset because it\'s undeclared';
+
+if (empty($variable)) echo '$variable empty() because it\'s undeclared';
+else echo '$variable not empty() because it\'s undeclared';
+?>
+
+<?php
+//  new code island declares $variable to contain nothing
+//
+$variable = null;
+?>
+
+<?php
+//  new code island uses prior $variable declaration
+//
+if (isset($variable)) echo '$variable isset() because it\'s value is null';
+else echo '$variable unset because it\'s value is null';
+
+$variable = 0;
+
+if (empty($variable)) {
+  echo ' Empty! Result = ' . $variable . ' ';
+} else {
+	echo ' Not Empty! Result = ' . $variable . ' ';
+}
+
+if (isset($variable )) {
+  echo '$variable isset() because it exists with a non-null value';
+?>
+
+<?php
+//  new code island closes prior statement's open brace
+//  this is VERY DANGEROUS to do!
+//
+} else 
+  echo '$variable unset because it\'s value is 0';
+?>

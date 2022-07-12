@@ -1,0 +1,4 @@
+Grade: 90/100 90%
+(-5) You are missing the password parameter to you BikeStore construcor.
+
+(-5) The classname specified in the instructions was BikeSite, not BikeStore.  Even so, the class name and constructor name need to be spelled the same.  The convention is that class names start with a capital letter, thus BikeStore, not bikeStore.  Languages are general not case insensitive (and PHP has case-sensitive and case insensitive constructs) so this correct spelling, including case, is important.

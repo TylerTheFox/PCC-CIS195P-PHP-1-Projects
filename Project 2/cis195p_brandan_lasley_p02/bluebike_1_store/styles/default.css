@@ -1,0 +1,30 @@
+body {
+	background-color: #FFF;
+	background-repeat: repeat;
+	background-image: url("../images/bg.jpg");
+	border-color: orange;
+	border-style: solid none none;
+	color: #FFF;
+	font-family: Verdana;
+	margin: auto;
+	text-align: center;
+}
+
+#login {
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    margin: -100px 0 0 -200px;
+    top: 45%;
+    left: 52%;
+}
+
+#submit {
+    float: right;
+    margin-right: -6.0em;
+}
+
+#logintext {
+	float: right;
+    margin-right: -10.0em;
+}

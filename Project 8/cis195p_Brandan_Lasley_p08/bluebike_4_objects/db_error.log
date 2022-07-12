@@ -1,0 +1,88 @@
+MDB2 Error: connect failed
+connect: [Error message: Access denied for user 'Mus1c'@'localhost' (using password: YES)]
+[Native code: 1045]
+[Native message: Access denied for user 'Mus1c'@'localhost' (using password: YES)]
+ ** mysql(mysql)://Mus1c:xxx@127.0.0.1/musicstore
+connect: [Error message: Access denied for user 'Mus1c'@'localhost' (using password: YES)]
+[Native code: 1045]
+[Native message: Access denied for user 'Mus1c'@'localhost' (using password: YES)]
+ ** mysql(mysql)://Mus1c:xxx@127.0.0.1/musicstore
+MDB2 Error: no such database
+connect: [Error message: Could not select the database: musicstore]
+[Native code: 1049]
+[Native message: Unknown database 'musicstore']
+ ** mysql(mysql)://root:xxx@127.0.0.1/musicstore
+connect: [Error message: Could not select the database: musicstore]
+[Native code: 1049]
+[Native message: Unknown database 'musicstore']
+ ** mysql(mysql)://root:xxx@127.0.0.1/musicstore
+MDB2 Error: constraint violation
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'MickyMouse', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'MickyMouse', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+MDB2 Error: constraint violation
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'MickyMouse', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'MickyMouse', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+MDB2 Error: constraint violation
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'Micky', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'Micky', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+MDB2 Error: constraint violation
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'MickyMouse', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('mickey.mouse@pcc.edu', 'MickyMouse', 1, 1, 'emem', 'f240a4a08ef4d49a9b643168779d8491');]
+[Native code: 1062]
+[Native message: Duplicate entry 'emem' for key 'login']
+
+MDB2 Error: no such table
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: SELECT BikeItem.ID, bikemaker.name, BikeItem.title, BikeItem.year, BikeType.description, BikeItem.quantityOnHand FROM BikeItem, bikemaker, BikeType 
+	WHERE BikeItem.fk_bikemakerID = bikemaker.pk_bikemakerID AND BikeItem.fk_BikeTypeID = BikeType.pk_BikeTypeID ORDER BY bikemaker.name;]
+[Native code: 1146]
+[Native message: Table 'bikesite.bikeitem' doesn't exist]
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: SELECT BikeItem.ID, bikemaker.name, BikeItem.title, BikeItem.year, BikeType.description, BikeItem.quantityOnHand FROM BikeItem, bikemaker, BikeType 
+	WHERE BikeItem.fk_bikemakerID = bikemaker.pk_bikemakerID AND BikeItem.fk_BikeTypeID = BikeType.pk_BikeTypeID ORDER BY bikemaker.name;]
+[Native code: 1146]
+[Native message: Table 'bikesite.bikeitem' doesn't exist]
+
+MDB2 Error: no such field
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: SELECT bike.ID, bike.bikemaker, bike.Bike, bike.model_year, bike.size, bike.type, bike.rate, bike.quanity FROM bike, bikemaker 
+	WHERE bike.bikemaker = bikemaker.bikemaker ORDER BY bikemaker.name;]
+[Native code: 1054]
+[Native message: Unknown column 'bikemaker.name' in 'order clause']
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: SELECT bike.ID, bike.bikemaker, bike.Bike, bike.model_year, bike.size, bike.type, bike.rate, bike.quanity FROM bike, bikemaker 
+	WHERE bike.bikemaker = bikemaker.bikemaker ORDER BY bikemaker.name;]
+[Native code: 1054]
+[Native message: Unknown column 'bikemaker.name' in 'order clause']
+

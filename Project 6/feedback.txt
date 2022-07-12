@@ -1,0 +1,6 @@
+Grade: 99/100 99%
+(-2) index.php has require_once("Customer.php) but file is "customer.php".  PHP has a bug in the require_once statement where it regards, say "Customer.php" and "customer.php" as the same file on some platforms and so includes the file twice giving a class redefinition error.  You may not see it on your platform, that's why it's only a 2 point error.  But it is annoying for me to grade and it's still an error on your part.  If required_once worked correctly, require_once("Customer.php") would give a file not found error if the file was really named "customer.php".  The best thing is to always spell file names consistently.  Also, don't rename the files.  Customer.php started with a capital C.  There's a good reason: the convention is that files containing a class definition share the class name, e.g. Customer is defined in Customer.php.
+
+(-5) Year is not set because at line 106 in the Bike constructor, you had $this->year instead of $this->year = $year.
+
+(+6) Extra credit: translation is working fine.  Don't worry about the lack of character support -- it's because the page is missing the metatag to pull in a richer character set.

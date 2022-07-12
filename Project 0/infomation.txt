@@ -1,0 +1,6 @@
+
+I deleted all the contents of the htdocs a long time ago...
+
+ 
+
+is this accecptable? Its a PHP page messing with the Google Maps API using XAMPP on localhost.

@@ -1,0 +1,3 @@
+Grade: 98/100 98%
+
+(-2) Everything works, but you have two re-enter password fields which is unnecessary and potentially confusing.

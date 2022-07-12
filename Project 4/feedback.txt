@@ -1,0 +1,11 @@
+Grade: 95/100 95%
+
+(-5) Your zip must expand into with the same name as the zip file minus the extension:
+
+cis195p_Brandan_Lasley_p04
+
+Underneath is the site folder:
+
+bluebike_2_site
+
+You've got a very subtle error in your statements to require_once Customer.php.  In some files, Customer.php is written with a capital C, in others, it is written with a lower case c.  The problem is this: Files names are case insensitive with respect to the file system, but require_once is case sensitive when comparing file names.  Thus it thinks that Customer.php and customer.php are different files, but when opening the file the file system thinks Customer.php and customer.php are the same and opens the file in both cases.  The result is an error because the Customer class is redeclared.  This is a bug in php.  It is a difficult one for them to fix since case sensitivity in the file system is operating system dependent so don't expect a fix soon.  Thus it is up to you to avoid this error by always spelling your files exactly as you named them!

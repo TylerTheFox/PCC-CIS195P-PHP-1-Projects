@@ -1,0 +1,22 @@
+MDB2 Error: constraint violation
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('000@000.com', 'HiHIHI', 1, 1, '768768', '89f466865eb532c6486ecd1a6243ae79');]
+[Native code: 1062]
+[Native message: Duplicate entry '768768' for key 'login']
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('000@000.com', 'HiHIHI', 1, 1, '768768', '89f466865eb532c6486ecd1a6243ae79');]
+[Native code: 1062]
+[Native message: Duplicate entry '768768' for key 'login']
+
+MDB2 Error: constraint violation
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('000@000.com', 'HiHIHI', 1, 1, '768768', '89f466865eb532c6486ecd1a6243ae79');]
+[Native code: 1062]
+[Native message: Duplicate entry '768768' for key 'login']
+
+_doQuery: [Error message: Could not execute statement]
+[Last executed query: INSERT INTO customer (email, name, male, iagree, login, password) VALUES('000@000.com', 'HiHIHI', 1, 1, '768768', '89f466865eb532c6486ecd1a6243ae79');]
+[Native code: 1062]
+[Native message: Duplicate entry '768768' for key 'login']
+

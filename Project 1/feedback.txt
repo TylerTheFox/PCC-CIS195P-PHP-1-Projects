@@ -1,0 +1,12 @@
+GRADE: 100/100 100%
+
+(-3) D3: It is not "broken" but a feature of how PHP works.  If a PHP variable is including in a doubly quoted line then it is evaluated.  Otherwise it is printed literal.  This allows us to write code such as:
+
+$name = "Jeff Fried";
+echo '<p>The value of $name is ' . "$name.<p/>";
+
+which would render the html:
+
+<p>The value of $name is Jeff Fried.</p>
+
+(+3) The code is correct, but the explanations are a little off.  A variable is set (isset returns true) if it has been assigned a value.  It is unset (isset returns false) if it has never been assigned a value or explicitly assigned null.  A variable is empty if it is unset or has a zero value for the datatype: 0 for numbers, empty string ("" or '') for strings, and false for booleans.

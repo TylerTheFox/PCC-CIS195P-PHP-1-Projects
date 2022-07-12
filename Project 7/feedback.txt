@@ -1,0 +1,16 @@
+Grade: 90/100 90%
+
+Next time you will be charged 5 points if your zip doesn't unzip into a toplevel folder according the project spec.  cis195p_brandan_lasley_p07.zip should unzip into the follow structure:
+
+cis195p_brandan_lasley_p07
+     bluebike_4_database
+         <files>
+
+
+(-5) What column in bike represents the make?  Is it bike_key?  This needs to be named with something to give the reader a clue; for example fk_bikemaker.
+
+(-5) A clue for the above could have been keys corresponding IDs in bikemaker.  But the IDs in bikemaker range from 0 to 4 and the bike_key values range from 0 to 11.  If bike_key is a foreign key then each of its values should be a corresponding id in bikemaker.  Thus the Potato and Fozel are made by alpha and beta respectively, but who manufactures the Normandy whose bike_key is 8?
+
+Though this wasn't specifically mentioned and I won't deduct credit, you should know it: Primary key identifiers in a database table should never be 0.
+
+To avoid problems in project 8: You have to modify the SQL in DB_ACCESS.ini according to details in the Project 8 SQL Heads Up announcement.  Remember that all column and table names in the SQL in DB_ACCESS.ini must match, including case, what you have in the database.

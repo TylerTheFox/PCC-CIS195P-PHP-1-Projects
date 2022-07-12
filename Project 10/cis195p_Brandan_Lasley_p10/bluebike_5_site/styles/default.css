@@ -1,0 +1,127 @@
+/*
+ *
+ *	author: scott.howard@pcc.edu
+ *	project: CIS199P Term Project
+ *	page: default.css
+ *	creation date: 	01/23/07
+ *	last modified:	03/05/07
+ *
+ */
+
+a:link, a:visited {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #B4CDCD;
+	font-size: 120%;
+	background-color: white;
+}
+
+body {
+	background-color: #FFF;
+	background-repeat: repeat;
+	background-image: url("../images/bg.jpg");
+	border-color: blue transparent transparent transparent;
+	border-width: 0.4em 0 0 0;
+	border-style: solid none none none;
+	color: #FFF;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: auto;
+	padding: 1.6em 8em 8em 2em;
+	text-align: center;
+}
+
+table.BikeCollection {
+	background-color: #B4CDCD;
+	background-repeat: no-repeat;
+	background-image: url("../img/redNote.jpg");
+	border-color: #363d3d;
+	border-width: 0.1em;
+	border-style: solid;
+	position: relative;
+	left: 4em;
+}
+
+td.BikeItem {
+	border-color: #363d3d;
+	border-width: 0.1em 0 0 0;
+	border-style: ridge;
+	color: #FFF;
+	font-size: 1.0em;
+	font-weight: 100;
+	padding: 0.4em 0.6em 0 0.6em;
+	text-align: left;
+	white-space: no-wrap;
+}
+
+td.available {
+	background-color: #363d3d;
+	border-color: #363d3d;
+	border-width: 0.1em 0 0 0;
+	border-style: ridge;
+	color: #FFF;
+	font-size: 1.0em;
+	font-weight: 100;
+	padding: 0 1em 0 1em;
+	text-align: center;
+}
+
+td.available:hover {background:#363d3d}
+
+td.unavailable {
+	background-color: #363d3d;
+	border-color: #363d3d;
+	border-width: 0.1em 0 0 0;
+	border-style: ridge;
+	color: #FFF;
+	font-size: 1.0em;
+	font-weight: 100;
+	padding: 0 1em 0 1em;
+	text-align: center;
+	font-style: italic;
+}
+
+th {
+	background-color: #363d3d;
+	color: #d2e1e1;
+	font-size: 1.2em;
+	font-weight: 300;
+	padding: 0.4em;
+	text-align: center;
+}
+
+
+#content {
+	display: block;
+	margin: auto;
+	padding: 15px;
+	position: absolute;
+	top: 8em;
+	left: 2em;
+	text-align: left;
+	width: 660px;
+}
+
+#navigation {
+	width:40%;
+	padding:2px 2px;
+	border:2px double gray;
+	margin:auto;
+	position: absolute;
+	text-align: right;
+	top: 0.5em;
+	right: 0.5em;
+}
+
+#title {
+	color: #FFF;
+	font-size: 4.0em;
+	font-weight: 100;
+	position: absolute;
+	top: 0em;
+	left: 1en;
+	text-align: left;
+}
